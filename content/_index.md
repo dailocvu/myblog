@@ -1,6 +1,6 @@
 ---
-title: How to Become a Better Developer
+title: OnPoint Intern Training Program 2022
 description: As a developer, you probably want to improve your skills constantly
 ---
 
-As a developer, you probably want to improve your skills constantly. Be the best developer you can possibly be. But how you can actually improve is a tricky question to answer. The Software industry is obsessed with the idea of 10x engineers. These are engineers who are supposedly 10 times better at their job than their peers. But how does anyone become so talented?
+12 weeks training for the technology internship program at OnPoint VN. This is a blog to archive all the content that I learned during my internship as a new-entry Frontend Web Developer.

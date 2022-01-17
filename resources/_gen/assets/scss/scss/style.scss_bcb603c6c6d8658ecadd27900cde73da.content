@@ -1,5 +1,5 @@
 :root {
-  --font-family-heading: 'Poppins', sans-serif;
+  --font-family-heading: "Poppins", sans-serif;
   --font-family-paragraph: Helvetica, sans-serif;
   --font-family-mono: monospace;
   --base-color: #ffffff;
@@ -584,7 +584,8 @@ ul.pagination {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
-html, body {
+html,
+body {
   box-sizing: border-box; }
 
 body {

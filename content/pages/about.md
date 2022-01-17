@@ -1,12 +1,11 @@
 ---
 title: "About"
-# image: images/writer.jpeg
 menu:
   main:
     name: "About"
 ---
 
-## Loc Vu - Frontend Developer Intern At OnPoint VN
+## Loc Vu - Frontend Web Developer Intern At OnPoint VN
 
 Lorem _markdownum notam si_ lintea meque certa, diu fatigant, nec praedae concustodita arcet.
 cur errat ventis causa! Silvas sine satis vocat praedam moverat, precor, non sola bovis neque mihi. Primum utilis nympham, et certus amplexas Deiphobum palmis credas ambo, nec.
