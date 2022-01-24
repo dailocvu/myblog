@@ -8,9 +8,19 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>[Tuần 2] CSS Cơ Bản: Selectors - Cascade/Specificity - Inheritance</title>
+      <link>/posts/tuan2-selector-specificity-inheritance/</link>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tuan2-selector-specificity-inheritance/</guid>
+      <description>Sau khi tìm hiểu về Box Model, ta bắt đầu với các khái niệm của CSS, tìm hiểu về các Selectors, để có thể chọn được thẻ mà mình mong muốn, cũng như về hệ thống phân cấp, tính kế thừa của chúng.
+ Selectors là gì? Như bạn biết trong một file HTML, có rất nhiều thẻ, cũng như các ID, class cho các thẻ để phân biệt, vậy trong CSS khi ta muốn truy xuất tới các phần tử này để styling, ta cần sự trợ giúp của các Selectors.</description>
+    </item>
+    
+    <item>
       <title>[Tuần 2] CSS Cơ Bản: Box Model</title>
       <link>/posts/tuan2-css-box-model/</link>
-      <pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>/posts/tuan2-css-box-model/</guid>
       <description>Trong tuần này, chúng ta bắt đầu tìm hiểu về các khái niệm cơ bản của CSS. Bắt đầu với nền tảng quan trọng đầu tiên - CSS Box Model.
