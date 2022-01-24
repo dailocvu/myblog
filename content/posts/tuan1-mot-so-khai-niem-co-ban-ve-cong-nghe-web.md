@@ -1,5 +1,5 @@
 ---
-title: Tuần 1 - Một số khái niệm cơ bản về công nghệ Web
+title: "[Tuần 1] Một số khái niệm cơ bản về công nghệ Web"
 date: 2022-01-19
 description: "DNS là gì, cách thức hoạt động của nó, cũng như những khái niệm liên quan như Domain Name, Hosting, HTTP là gì?
 Các trình duyệt web là gì? Cách thức hoạt động của chúng ra sao?"
