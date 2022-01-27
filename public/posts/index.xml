@@ -8,6 +8,27 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>[Tuần 2] CSS Cơ Bản: Positioning</title>
+      <link>/posts/tuan2-positioning/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tuan2-positioning/</guid>
+      <description>Position trong CSS là gì? Position trong CSS được sử dụng để định vị vị trí hiển thị của các phần tử thẻ HTML.
+Khi nói đến vị trí, ta thường hình dung ra 4 vị trí chính, bao gồm: trên (top) - dưới (bottom) - trái (left) - phải (right). Khi thực hiện layout, ta sẽ cần quan tâm đến nhiều vị trí phức tạp hơn:
+Position trong CSS có 5 thuộc tính cơ bản, bao gồm:</description>
+    </item>
+    
+    <item>
+      <title>[Tuần 2] CSS Cơ Bản: Measurement Units</title>
+      <link>/posts/tuan2-measurement-units/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tuan2-measurement-units/</guid>
+      <description>Các đơn vị đo lường trong CSS là gì? CSS hỗ trợ nhiều đơn vị đo lường được chia thành hai loại chính, đơn vị tuyệt đối và đơn vị tương đối.
+Đơn vị tuyệt đối: là những đơn vị mà giá trị của nó không bao giờ thay đổi và không bị ảnh hưởng bởi các thành phần khác. Tức là trong mọi kích thước màn hình thì kích thước của nó vẫn như thế.</description>
+    </item>
+    
+    <item>
       <title>[Tuần 2] CSS Cơ Bản: Selectors - Cascade/Specificity - Inheritance</title>
       <link>/posts/tuan2-selector-specificity-inheritance/</link>
       <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>

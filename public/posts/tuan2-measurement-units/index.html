@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>[Tuần 2] CSS Cơ Bản: Measurement Units - Loc Vu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.bcad1e514a22ceb68d813f09542ea3bcf5c25c03aec78dbfa04a2536721748bc.css">
+  
+
+  
+    <meta name="description" content="CSS hỗ trợ nhiều đơn vị đo lường được chia thành hai loại chính, là đơn vị tuyệt đối và đơn vị tương đối."/>
+    <meta property="og:title" content="[Tuần 2] CSS Cơ Bản: Measurement Units"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/tuan2-measurement-units/"/>
+    
+    <meta property="og:description" content="CSS hỗ trợ nhiều đơn vị đo lường được chia thành hai loại chính, là đơn vị tuyệt đối và đơn vị tương đối."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@zerostaticio"/>
+    <meta name="twitter:creator" content="@zerostaticio"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Loc Vu</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>[Tuần 2] CSS Cơ Bản: Measurement Units<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <h2 id="các-đơn-vị-đo-lường-trong-css-là-gì">Các đơn vị đo lường trong CSS là gì?</h2>
+<p>CSS hỗ trợ nhiều đơn vị đo lường được chia thành hai loại chính, đơn vị tuyệt đối và đơn vị tương đối.</p>
+<p><strong>Đơn vị tuyệt đối:</strong> là những đơn vị mà giá trị của nó không bao giờ thay đổi và không bị ảnh hưởng bởi các thành phần khác. Tức là trong mọi kích thước màn hình thì kích thước của nó vẫn như thế.<br>
+<strong>Đơn vị tương đối:</strong> là những đơn vị được tính một cách tương đối dựa trên các phần tử khác (có thể là phần tử cha hoặc root). Các đơn vị loại này khá linh động, thích hợp cho việc thích ứng trên các thiết bị khác nhau.</p>
+<p>Các đơn vị thường gặp được biểu diễn qua bảng dưới đây:</p>
+<p><img src="/images/units.png" alt="Units"></p>
+<h2 id="đơn-vị-tuyệt-đối">Đơn vị tuyệt đối</h2>
+<p>Với các đơn vị tuyệt đối thì giá trị của nó được cố định và không bị ảnh hưởng bởi bất kỳ thành phần nào khác.</p>
+<p>Các đơn vị này chỉ nên sử dụng với những thành phần đã được xác định chính xác kích thước hoặc các thuộc tính có kích thước nhỏ ví dụ như <strong>border: 3px solid orange;</strong>
+<img src="/images/px.png" alt="Units"><br>
+Ta có thể xác mình bằng cách thay đổi kích thước trình duyệt. Các đơn vị này sẽ không bị thay đổi.</p>
+<p>Trong các đơn vị tuyệt đối, đơn vị được sử dụng nhiều nhất là <strong>px</strong>. Tuy nhiên, đôi lúc ta có thể gặp những đơn vị khác, hình dưới đây sẽ giúp ích, khi ta gặp bối rối về cách quy đổi của chúng.
+<img src="/images/units2.jpg" alt="Units"></p>
+<h2 id="đơn-vị-tương-đối">Đơn vị tương đối</h2>
+<p><strong>%</strong> - Tỉ lệ phần trăm với phần tử cha.<br>
+<img src="/images/percent.gif" alt="Units"></p>
+<p><strong>vw và vh</strong><br>
+<strong>vw</strong> - Tỉ lệ với kích thước chiều rộng khung nhìn. 1vw = 1% viewport width. Ví dụ: màn hình có chiều rộng 1000px thì 1vw = 10px.<br>
+<strong>vh</strong> - Tỉ lệ với kích thước chiều cao khung nhìn. 1vw = 1% viewport height.<br>
+<img src="/images/vwvh.gif" alt="Units"></p>
+<p><strong>em và rem - hai đơn vị thường xuyên được sử dụng</strong><br>
+Sử dụng khi ta cần điều chỉnh layout dựa trên font-size. Ví dụ khi font-size lớn hơn, ta muốn kích thước layout cũng tăng lên.</p>
+<p><strong>em</strong> - Tỉ lệ với thuộc tính font-size của chính nó (ưu tiên) hoặc phần tử cha.<br>
+Ví dụ: 10em = 10 x font-size = 200px.<br>
+<img src="/images/em1.png" alt="Units"><br>
+Nếu không được chỉ định font-size, nó sẽ tìm kiếm font-size của cha, và tiếp tục cha tiếp theo, đến cuối cùng nếu vẫn không có thì sẽ sử dụng font-size mặc định của root là <strong>16px</strong> <br>
+<img src="/images/em2.png" alt="Units"></p>
+<p>1 lưu ý khác khi sử dụng <strong>em</strong> trên font-size, kích thước sẽ được tính dựa trên font-size của cha. Trong khi sử dụng trên các thuộc tính khác thì sẽ ưu tiên font-size của chính nó.<br>
+<img src="/images/em3.png" alt="Units"></p>
+<p><strong>rem</strong> - Tỉ lệ với thuộc tính font-size của phần tử <strong>root (html)</strong>.</p>
+<p>Vì font-size của root sẽ được cố định (mặc định là 16px nếu không thiết lập), nên ta sẽ dễ dàng tính toán hơn. Nhưng tính toán nhanh với <strong>16</strong> đôi lúc có chút khó khăn, nên ta có thể sử dụng trick dưới đây để tính toán được nhanh hơn.<br>
+Ta set <strong>html { font-size: 62.5% }</strong>, vì mặc định font-size là 16px = 100%, 62,5% tức 10px, do đó, khi tính toán với <strong>10</strong> sẽ dễ dàng hơn.<br>
+<img src="/images/rem.png" alt="Units">
+Trong trường hợp font-size được thay đổi theo thiết bị hoặc cài đặt của người dùng, ta sẽ có layout được tự động điều chỉnh to nhỏ phù hợp.
+<img src="/images/rem2.png" alt="Units"></p>
+<h2 id="1-số-đơn-vị-đo-khác">1 số đơn vị đo khác</h2>
+<p><strong>vmin và vmax</strong> - tương tự như vw và vh. Điểm khác biệt là nó sẽ không tỉ lệ theo 1 hướng mà là cả 2, tuỳ thuộc vào độ lớn của chiều cao và chiều rộng màn hình.<br>
+1 vmin = 1 vw hoặc 1 vh (Lấy cái nhỏ hơn). VD: màn hình có kích thước là 840×640 thì 1 vmin = 6.4px, nếu màn hình là 360×480 thì 1 vmin = 3.6px.<br>
+1 vmax = 1 vw hoặc 1 vh (Lấy cái lớn hơn). VD: màn hình có kích thước là 840×640 thì 1 vmin = 8.4px, nếu màn hình là 360×480 thì 1 vmin = 4.8px.</p>
+<p><strong>ch</strong> - là đơn vị được tính theo chiều rộng của ký tự “0”. Với những font chữ là monospace thì các ký tự đều có cùng 1 chiều rộng.</p>
+<h2 id="không-có-đơn-vị-đo-nào-là-tốt-nhất">Không có đơn vị đo nào là tốt nhất</h2>
+<p>Tuỳ thuộc vào mục đích, nhu cầu sử dụng và vấn đề cần giải quyết, ta cần linh hoạt sử dụng các đơn vị đo lường sao cho phù hợp.</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
