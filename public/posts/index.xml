@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>[Tuần 3] CSS Cơ Bản: Grid Layout</title>
+      <link>/posts/tuan3-grid-layout/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tuan3-grid-layout/</guid>
+      <description>Trong bài viết trước ta đã tìm hiểu về FlexBox, tuy nhiên ứng dụng web ngày nay giao diện ngày càng phức tạp nên việc chỉ sử dụng FlexBox thực sự vẫn chưa tối ưu, cần nhiều giải pháp hơn để tạo ra layout một cách nhanh và tối ưu nhất. Vì thế mà Grid Layout được sinh ra để giải quyết vấn đề này. Với Grid, ta có thể hiểu đơn giản là layout dưới dạng lưới.</description>
+    </item>
+    
+    <item>
       <title>[Tuần 3] CSS Cơ Bản: Flexible Box Layout (FlexBox)</title>
       <link>/posts/tuan3-flexbox/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
