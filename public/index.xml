@@ -6,7 +6,17 @@
     <description>Recent content in OnPoint Intern Training Program 2022 on Loc Vu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Tuần 3] CSS Cơ Bản: Flexible Box Layout (FlexBox)</title>
+      <link>/posts/tuan3-flexbox/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tuan3-flexbox/</guid>
+      <description>Dàn bố cục cho trang là một trong những công việc quan trọng nhất khi ta bắt đầu lập trình giao diện một trang web. Có hai cách để ta có thể dàn trang một cách linh hoạt và dễ dàng là sử dụng FlexBox và Grid Layout, trong bài viết này, ta sẽ tìm hiểu về FlexBox và các đặc điểm của nó.
+ FlexBox là gì? FlexBox (hay Flexible Box) là một kiểu bố cục trang theo một hướng (chiều ngang/dọc), có khả năng tự cân đối kích thước, thay đổi chiều rộng/chiều cao và thứ tự phần tử bên trong để phù hợp với tất cả các loại thiết bị hiển thị và kích thước màn hình.</description>
+    </item>
+    
     <item>
       <title>[Tuần 2] CSS Cơ Bản: Positioning</title>
       <link>/posts/tuan2-positioning/</link>
