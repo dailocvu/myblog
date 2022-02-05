@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>[Tuần 3] CSS Cơ Bản: Animation Cơ Bản - Loc Vu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.bcad1e514a22ceb68d813f09542ea3bcf5c25c03aec78dbfa04a2536721748bc.css">
+  
+
+  
+    <meta name="description" content="Một trang web đẹp và hiện đại không thể thiếu những hiệu ứng, chuyển động mượt mà và đẹp mắt. Trong bài viết này, ta sẽ tìm hiểu về các thành phần tạo nên các hiệu ứng ấy, bao gồm transformations, transitions và animations."/>
+    <meta property="og:title" content="[Tuần 3] CSS Cơ Bản: Animation Cơ Bản"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/tuan3-basic-animation/"/>
+    
+    <meta property="og:description" content="Một trang web đẹp và hiện đại không thể thiếu những hiệu ứng, chuyển động mượt mà và đẹp mắt. Trong bài viết này, ta sẽ tìm hiểu về các thành phần tạo nên các hiệu ứng ấy, bao gồm transformations, transitions và animations."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@zerostaticio"/>
+    <meta name="twitter:creator" content="@zerostaticio"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Loc Vu</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>[Tuần 3] CSS Cơ Bản: Animation Cơ Bản<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <blockquote>
+<p>Một trang web đẹp và hiện đại không thể thiếu những hiệu ứng, chuyển động mượt mà và đẹp mắt. Trong bài viết này, ta sẽ tìm hiểu về các thành phần tạo nên các hiệu ứng ấy, bao gồm transformations, transitions và animations.</p>
+</blockquote>
+<p><img src="/images/animation2.png" alt="Animation"></p>
+<h2 id="transformations">Transformations</h2>
+<p><strong>Transform</strong> là những thuộc tính dùng để &ldquo;biến đổi&rdquo; các phần tử, cho phép chúng thay đổi vị trị, hình dáng, kích thước hay xoay phần tử theo các chiều.</p>
+<p>Có 2 kiểu là <strong>2D</strong> và <strong>3D transformation</strong>.
+<img src="/images/animation1.png" alt="Animation">
+Tên các thuộc tính tương ứng với hiệu ứng mà chúng mang lại, lần lượt là: <strong>xoay, thay đổi tỉ lệ, tạo độ lệch, dịch chuyển</strong>. Ta sẽ dùng các ví dụ để dễ dàng hình dung các thay đổi mà thuộc tính của <strong>transform</strong> mang lại.</p>
+<h3 id="rotate">Rotate</h3>
+<p><img src="/images/animation3.gif" alt="Animation"></p>
+<h3 id="scale">Scale</h3>
+<p><img src="/images/animation4.gif" alt="Animation"></p>
+<h3 id="skew">Skew</h3>
+<p><img src="/images/animation5.gif" alt="Animation"></p>
+<h3 id="translate">Translate</h3>
+<p><img src="/images/animation6.gif" alt="Animation"></p>
+<h3 id="sử-dụng-kết-hợp">Sử dụng kết hợp</h3>
+<p><img src="/images/animation7.gif" alt="Animation"></p>
+<h2 id="3d-transformations">3D Transformations</h2>
+<p>Với <strong>3D Transformations</strong>, bên cạnh các hiệu ứng thay đổi trên <strong>trục x</strong> và <strong>trục y</strong> như trên <strong>2D Transformations</strong>, ta còn cần quan tâm thêm <strong>trục z</strong> (độ gần, xa). Bên cạnh đó, ta còn cần quan tâm thuộc tính <strong>transform-origin</strong> - vị trí chọn làm gốc cho hiệu ứng diễn ra.</p>
+<p>Dưới đây là ví dụ về một số <strong>3D Transformations</strong> thường gặp.</p>
+<h3 id="translate-1">Translate</h3>
+<p><img src="/images/animation8.gif" alt="Animation"></p>
+<h3 id="rotate-1">Rotate</h3>
+<p><img src="/images/animation9.gif" alt="Animation"></p>
+<h3 id="transform-nhiều-items">Transform nhiều items</h3>
+<p><img src="/images/animation10.gif" alt="Animation"></p>
+<h2 id="transitions">Transitions</h2>
+<p>Thuộc tính <strong>Transition</strong> được sử dụng khá rộng rãi để tạo ra các hiệu ứng chuyển đổi đẹp mắt trên website một cách dễ dàng. Hoạt động bằng cách thay đổi giá trị thuộc tính một cách trơn tru từ giá trị này sang giá trị khác trong khoảng thời gian nhất định.</p>
+<p>Các tham số thường được sử dụng:<br>
+<strong>- transition-property:</strong> thuộc tính cần chuyển đổi (all nếu muốn tất cả).<br>
+<strong>- transition-duration:</strong> khoảng thời gian chuyển đổi diễn ra.<br>
+<strong>- transition-timing-function:</strong> tốc độ chuyển đổi diễn ra (ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier: tốc độ tuỳ chọn).<br>
+<strong>- transition-delay:</strong> khoảng thời gian dừng cho mỗi hiệu ứng chuyển đổi.</p>
+<p>Để tạo ra hiệu ứng chuyển đổi Transition, bạn phải xác định ít nhất hai điều:<br>
+<strong>- Thuộc tính CSS muốn thêm hiệu ứng vào</strong>.<br>
+<strong>- Thời gian chuyển đổi diễn ra (duration)</strong>.</p>
+<p>Trong ví dụ bên dưới, ta sẽ chọn thuộc tính áp dụng là <strong>transform</strong> với thời gian <strong>0.5s</strong>, tốc độ <strong>ease-in</strong> (chậm tới nhanh)</p>
+<p><img src="/images/animation11.gif" alt="Animation"></p>
+<h2 id="animations">Animations</h2>
+<p><strong>Animation</strong> được hiểu là hiệu ứng chuyển động, sử dụng để tạo hiệu ứng di chuyển cho các phần tử và được sử dụng khá nhiều trong các website hiện nay.</p>
+<p>Để tạo một chuyển động <strong>Animation</strong>, ta cần phải có các <strong>keyframe</strong>. Mỗi <strong>keyframe</strong> sẽ được chạy ở một thời điểm xác định và trong keyframe đó nó quy định việc phần tử sẽ di chuyển ra sao.</p>
+<p>Một số thuộc tính quan trọng:<br>
+<strong>- animation-name</strong>: tên namiation cần thực thi.<br>
+<strong>- animation-duration</strong>: khoảng thời gian diễn ra hiệu ứng.<br>
+<strong>- animation-timing-function</strong>: tốc độ thay đổi hiệu ứng (ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier: tốc độ tuỳ chọn).<br>
+<strong>- animation-delay</strong>: khoảng thời gian trì hoãn.<br>
+<strong>- animation-iteration-count</strong>: số lần thực hiện một animation (số lần, infinite).<br>
+<strong>- aniamtion-direction</strong>: xác định hướng chạy animation.<br>
+<strong>- animation-fill-mode</strong>: thay đổi trạng thái của phần tử trước khi bắt đầu sau khi kết thúc Animation.</p>
+<p>Ta có ví dụ đơn giản như bên dưới để tìm hiểu về các thuộc tính của <strong>Animation</strong>. Ta khởi tạo 1 <strong>keyframes</strong> với tên <strong>pop</strong>, và thiết lập các mốc thời gian và hiệu ứng thay đổi tương ứng. Sau đó áp dụng shorthand <strong>animation</strong> với các thông số lần lượt là: <strong>pop (name) - 4s (duration) - ease-out (timing-function) - 1s (delay) - infinite (iteration-count) - alternate (direction).</strong>
+<img src="/images/animation12.gif" alt="Animation"></p>
+<h3 id="tái-sử-dụng-animation">Tái sử dụng Animation</h3>
+<p>Thay vì phải áp dụng thuộc tính animation cho từng phần tử, ta có thể tách riêng hiệu ứng animation thành một class riêng, và áp dụng vào bất cứ phần tử mà mình mong muốn. Ví dụ:
+<img src="/images/animation13.png" alt="Animation"></p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

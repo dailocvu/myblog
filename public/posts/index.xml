@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>[Tuần 3] CSS Cơ Bản: Animation Cơ Bản</title>
+      <link>/posts/tuan3-basic-animation/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tuan3-basic-animation/</guid>
+      <description>Một trang web đẹp và hiện đại không thể thiếu những hiệu ứng, chuyển động mượt mà và đẹp mắt. Trong bài viết này, ta sẽ tìm hiểu về các thành phần tạo nên các hiệu ứng ấy, bao gồm transformations, transitions và animations.
+ Transformations Transform là những thuộc tính dùng để &amp;ldquo;biến đổi&amp;rdquo; các phần tử, cho phép chúng thay đổi vị trị, hình dáng, kích thước hay xoay phần tử theo các chiều.</description>
+    </item>
+    
+    <item>
       <title>[Tuần 3] CSS Cơ Bản: Grid Layout</title>
       <link>/posts/tuan3-grid-layout/</link>
       <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
