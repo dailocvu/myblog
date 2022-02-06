@@ -6,7 +6,16 @@
     <description>Recent content in OnPoint Intern Training Program 2022 on Loc Vu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Tuần 3] CSS Cơ Bản: Responsive Design</title>
+      <link>/posts/tuan3-responsive-design/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tuan3-responsive-design/</guid>
+      <description>Ngày nay, trong lĩnh vực lập trình web, ta nhanh chóng nhận ra rằng không thể theo kịp với sự phát triển chóng mặt của các thiết bị điện tử mới với độ phân giải màn hình khác nhau. Chính vì vậy thay vì thiết kế từng phiên bản phù hợp cho từng thiết bị, thì giải pháp tối ưu là sử dụng Responsive Design - giúp trang web của chúng ta có thể phù hợp với tất cả kích thước màn hình trên các thiết bị.</description>
+    </item>
+    
     <item>
       <title>[Tuần 3] CSS Cơ Bản: Animation Cơ Bản</title>
       <link>/posts/tuan3-basic-animation/</link>
