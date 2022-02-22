@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/tuan3-responsive-design/</loc>
+    <loc>/posts/responsive-design/</loc>
     <lastmod>2022-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
     <lastmod>2022-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/tuan3-basic-animation/</loc>
+    <loc>/posts/basic-animation/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/tuan3-grid-layout/</loc>
+    <loc>/posts/grid-layout/</loc>
     <lastmod>2022-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/tuan3-flexbox/</loc>
+    <loc>/posts/flexbox/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/tuan2-positioning/</loc>
+    <loc>/posts/positioning/</loc>
     <lastmod>2022-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/tuan2-measurement-units/</loc>
+    <loc>/posts/measurement-units/</loc>
     <lastmod>2022-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/tuan2-selector-specificity-inheritance/</loc>
+    <loc>/posts/selector-specificity-inheritance/</loc>
     <lastmod>2022-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/tuan2-css-box-model/</loc>
+    <loc>/posts/css-box-model/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/tuan1-mot-so-khai-niem-co-ban-ve-cong-nghe-web/</loc>
+    <loc>/posts/</loc>
     <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>/posts/mot-so-khai-niem-co-ban-ve-cong-nghe-web/</loc>
     <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/pages/about/</loc>

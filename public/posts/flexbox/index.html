@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CSS Cơ Bản: Flexible Box Layout (FlexBox) - Loc Vu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.bcad1e514a22ceb68d813f09542ea3bcf5c25c03aec78dbfa04a2536721748bc.css">
+  
+
+  
+    <meta name="description" content="Dàn bố cục cho trang là một trong những công việc quan trọng nhất khi ta bắt đầu lập trình giao diện một trang web. Có hai cách để ta có thể dàn trang một cách linh hoạt và dễ dàng là sử dụng FlexBox và Grid Layout, trong bài viết này, ta sẽ tìm hiểu về FlexBox và các đặc điểm của nó."/>
+    <meta property="og:title" content="CSS Cơ Bản: Flexible Box Layout (FlexBox)"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/flexbox/"/>
+    
+    <meta property="og:description" content="Dàn bố cục cho trang là một trong những công việc quan trọng nhất khi ta bắt đầu lập trình giao diện một trang web. Có hai cách để ta có thể dàn trang một cách linh hoạt và dễ dàng là sử dụng FlexBox và Grid Layout, trong bài viết này, ta sẽ tìm hiểu về FlexBox và các đặc điểm của nó."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@zerostaticio"/>
+    <meta name="twitter:creator" content="@zerostaticio"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Loc Vu</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>CSS Cơ Bản: Flexible Box Layout (FlexBox)<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <blockquote>
+<p>Dàn bố cục cho trang là một trong những công việc quan trọng nhất khi ta bắt đầu lập trình giao diện một trang web. Có hai cách để ta có thể dàn trang một cách linh hoạt và dễ dàng là sử dụng FlexBox và Grid Layout, trong bài viết này, ta sẽ tìm hiểu về FlexBox và các đặc điểm của nó.</p>
+</blockquote>
+<h2 id="flexbox-là-gì">FlexBox là gì?</h2>
+<p><strong>FlexBox</strong> (hay Flexible Box) là một kiểu bố cục trang <strong>theo một hướng</strong> (chiều ngang/dọc), có khả năng tự cân đối kích thước, thay đổi chiều rộng/chiều cao và thứ tự phần tử bên trong để phù hợp với tất cả các loại thiết bị hiển thị và kích thước màn hình.<br>
+<img src="/images/flex1.gif" alt="Flexbox"></p>
+<h2 id="cấu-trúc-của-flexbox">Cấu trúc của FlexBox</h2>
+<p><strong>FlexBox</strong> được cấu tạo từ hai thành phần chính:<br>
+<strong>- Container:</strong> chứa đựng các items bên trong, các items sẽ được hiển thị dựa trên thiết lập của container.<br>
+<strong>- Items:</strong> là các phần tử con, ta có thể dùng các thiết lập để điều chính cách thức chúng được hiện thị.</p>
+<p>Để có thể điều chỉnh các items theo hướng ta mong muốn, ta cần quan tâm tới <strong>Axes</strong> (các trục), các trục này sẽ phụ thuộc vào hướng mà ta muốn dàn trang (ngang/dọc). Gồm <strong>main axis (primary)</strong> và <strong>cross axis (secondary)</strong>
+<img src="/images/flex2.webp" alt="Flexbox">
+<img src="/images/flex3.png" alt="Flexbox"></p>
+<h2 id="các-thuộc-tính-của-container">Các thuộc tính của Container</h2>
+<p>Nắm được hai trục trên, ta có thể dễ dàng căn chỉnh các <strong>items</strong> bên trong <strong>container</strong> dựa vào các thuộc tính:<br>
+<img src="/images/flex4.png" alt="Flexbox"></p>
+<p>Để minh hoạ dễ hiểu hơn, ta sẽ bắt đầu với ví dụ dưới đây, <strong>gồm 1 container chứa 3 boxes</strong>:<br>
+<img src="/images/flex5.png" alt="Flexbox"></p>
+<p>Ta có thể dễ dàng áp dụng <strong>FlexBox</strong> layout bằng cách thêm thuộc tính <strong>display: flex</strong> vào <strong>container</strong>. Mặc định các items sẽ được dàn theo chiều ngang (row) khi ta áp dụng <strong>flex</strong> mà không thiết lập hướng cho chúng.
+<img src="/images/flex6.png" alt="Flexbox"></p>
+<h3 id="flex-direction">Flex Direction</h3>
+<p>Để điều chỉnh hướng ta muốn hiển thị của các <strong>items</strong> bên trong <strong>container</strong>, ta sử dụng thuộc tính <strong>flex-direction</strong>, với các tuỳ chọn gồm <strong>row | row-reverse | column | column-reverse</strong>.</p>
+<p><img src="/images/flex7.png" alt="Flexbox"></p>
+<h3 id="justify-content">Justify Content</h3>
+<p>Thuộc tính <strong>justify-content</strong> để điều chỉnh vị trí bắt đầu và căn chỉnh các items bên trong container dọc theo trục <strong>main axis</strong>, chiều ngang/dọc tùy thuộc vào <strong>flex-direction</strong>. Trong ví dụ bên dưới, <strong>flex-direction</strong> theo chiều ngang. Tức <strong>justify-content</strong> sẽ căn chỉnh các items theo <strong>chiều ngang</strong>.</p>
+<p>Bao gồm các thuộc tính <strong>flex-start | flex-end | center | space-between | space-around | space-evenly</strong>.<br>
+<img src="/images/flex8.png" alt="Flexbox"></p>
+<h3 id="align-items">Align Items</h3>
+<p>Thuộc tính <strong>align-items</strong> sử dụng để điều chỉnh vị trí bắt đầu và căn chỉnh các item bên trong container dọc theo trục <strong>cross axis</strong>, chiều ngang/dọc tùy thuộc vào <strong>flex-direction</strong>. Trong ví dụ bên dưới, <strong>flex-direction</strong> theo chiều ngang. Tức <strong>align-items</strong> sẽ căn chỉnh các items theo <strong>chiều dọc</strong>.</p>
+<p>Bao gồm các thuộc tính <strong>stretch | flex-start | flex-end | center | baseline</strong><br>
+<img src="/images/flex9.png" alt="Flexbox"></p>
+<h3 id="flex-wrap">Flex Wrap</h3>
+<p>Mặc định, items sẽ tự động thay đổi kích thước để nó luôn hiển thị trên cùng một dòng dù ta có thay đổi kích thước trình duyệt, điều này dễ làm cho nội dung bên trong bị giãn hay ép nhỏ lại. Thuộc tính <strong>flex-wrap</strong> cho phép items tự động xuống dòng khi kích thước container thay đổi.</p>
+<p>Bao gồm các thuộc tính <strong>nowrap | wrap | wrap-reverse</strong>
+<img src="/images/flex11.png" alt="Flexbox"></p>
+<h3 id="align-content">Align Content</h3>
+<p>Thuộc tính <strong>align-content</strong> sử dụng để căn chỉnh khoảng cách các item bên trong container dọc theo trục <strong>cross axis</strong>, chiều ngang/dọc tùy thuộc vào <strong>flex-direction</strong>. Trong ví dụ bên dưới, <strong>flex-direction</strong> theo chiều ngang. Tức <strong>align-items</strong> sẽ căn chỉnh các items theo <strong>chiều dọc</strong>.</p>
+<p>Bao gồm các thuộc tính <strong>flex-start | flex-end | center | space-between | space-around | stretch</strong>
+<img src="/images/flex10.png" alt="Flexbox"></p>
+<h2 id="các-thuộc-tính-của-items">Các thuộc tính của Items</h2>
+<h3 id="align-self">Align Self</h3>
+<p>Ở phần trên, ta đã biết cách để bố cục, di chuyển tất cả các <strong>items</strong> bên trong <strong>container</strong>, vậy nếu ta chỉ muốn di chuyển duy nhất 1 item thì sao?</p>
+<p>Thuộc tính <strong>align-self</strong> có tác dụng tương tự như <strong>align-items</strong> của container nhưng sử dụng riêng cho từng item, ta có thể dùng nó để đặt vị trí cho item.</p>
+<p><strong>Align-self</strong> cũng có các thuộc tính giống như <strong>align-items</strong>, gồm: <strong>flex-start | flex-end | center | baseline | stretch</strong>
+<img src="/images/flex12.png" alt="Flexbox"></p>
+<h3 id="sizing-items">Sizing Items</h3>
+<p>Ở trên ta đã nói khá nhiều về căn chỉnh vị trí, tiếp theo đây, ta sẽ tìm hiểu về điều chỉnh kích thước của các <strong>items</strong> bên trong <strong>container</strong>.
+<img src="/images/flex13.png" alt="Flexbox"></p>
+<h3 id="flex-basis">Flex Basis</h3>
+<p>Thuộc tính <strong>flex-basis</strong> sử dụng để xác định <strong>độ dài</strong> ban đầu của một item.</p>
+<p>Nếu <strong>flex-direction: row</strong> - <strong>flex-basis</strong> sẽ ghi đè thuộc tính của <strong>width</strong>.<br>
+Nếu <strong>flex-direction: column</strong> - <strong>flex-basis</strong> sẽ ghi đè thuộc tính của <strong>height</strong>.
+<img src="/images/flex14.png" alt="Flexbox"></p>
+<h3 id="flex-grow">Flex Grow</h3>
+<p>Thuộc tính <strong>flex-grow</strong> cho phép các phần tử giãn theo độ rộng của container, nhằm chiếm lấy các phần còn trống bên trong container.
+<img src="/images/flex15.png" alt="Flexbox"></p>
+<h3 id="flex-shrink">Flex Shrink</h3>
+<p>Thuộc tính <strong>flex-shrink</strong> ngược lại với <strong>flex-grow</strong>, nó không giãn ra mà co lại nếu các items không đủ khoảng trống để vừa container, khi chúng ta thay đổi độ rộng của nó.</p>
+<p>Giá trị mặc định trong <strong>flex-shrink</strong> là 1, cho phép các phần tử co lại bằng nhau khi độ rộng container giảm xuống. Nếu <strong>flex-shrink: 0</strong> thì item sẽ không co giãn. Giá trị càng lớn thì độ co lại nhiều hơn.
+<img src="/images/flex16.gif" alt="Flexbox"></p>
+<h3 id="flex">Flex</h3>
+<p>Thuộc tính <strong>flex</strong> là shorthand sử dụng để gộp chung ba thuộc tính <strong>flex-grow, flex-shrink và flex-basis</strong>.
+<img src="/images/flex17.png" alt="Flexbox"></p>
+<h3 id="order">Order</h3>
+<p>Mặc định, các item sẽ hiển thị theo thứ tự trong HTML, nhưng với thuộc tính order, ta có thể sắp xếp lại vị trí của các item.
+<img src="/images/flex18.png" alt="Flexbox"></p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

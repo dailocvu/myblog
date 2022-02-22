@@ -1,5 +1,5 @@
 ---
-title: "[Tuần 3] CSS Cơ Bản: Flexible Box Layout (FlexBox)"
+title: "CSS Cơ Bản: Flexible Box Layout (FlexBox)"
 date: 2022-01-27
 description: "Dàn bố cục cho trang là một trong những công việc quan trọng nhất khi ta bắt đầu lập trình giao diện một trang web. Có hai cách để ta có thể dàn trang một cách linh hoạt và dễ dàng là sử dụng FlexBox và Grid Layout, trong bài viết này, ta sẽ tìm hiểu về FlexBox và các đặc điểm của nó."
 ---

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CSS Cơ Bản: Responsive Design - Loc Vu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.bcad1e514a22ceb68d813f09542ea3bcf5c25c03aec78dbfa04a2536721748bc.css">
+  
+
+  
+    <meta name="description" content="Ngày nay, trong lĩnh vực lập trình web, ta nhanh chóng nhận ra rằng không thể theo kịp với sự phát triển chóng mặt của các thiết bị điện tử mới với độ phân giải màn hình khác nhau. Chính vì vậy thay vì thiết kế từng phiên bản phù hợp cho từng thiết bị, thì giải pháp tối ưu là sử dụng Responsive Design - giúp trang web của chúng ta có thể phù hợp với tất cả kích thước màn hình trên các thiết bị."/>
+    <meta property="og:title" content="CSS Cơ Bản: Responsive Design"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/responsive-design/"/>
+    
+    <meta property="og:description" content="Ngày nay, trong lĩnh vực lập trình web, ta nhanh chóng nhận ra rằng không thể theo kịp với sự phát triển chóng mặt của các thiết bị điện tử mới với độ phân giải màn hình khác nhau. Chính vì vậy thay vì thiết kế từng phiên bản phù hợp cho từng thiết bị, thì giải pháp tối ưu là sử dụng Responsive Design - giúp trang web của chúng ta có thể phù hợp với tất cả kích thước màn hình trên các thiết bị."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@zerostaticio"/>
+    <meta name="twitter:creator" content="@zerostaticio"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Loc Vu</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>CSS Cơ Bản: Responsive Design<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <blockquote>
+<p>Ngày nay, trong lĩnh vực lập trình web, ta nhanh chóng nhận ra rằng không thể theo kịp với sự phát triển chóng mặt của các thiết bị điện tử mới với độ phân giải màn hình khác nhau. Chính vì vậy thay vì thiết kế từng phiên bản phù hợp cho từng thiết bị, thì giải pháp tối ưu là sử dụng Responsive Design - giúp trang web của chúng ta có thể phù hợp với tất cả kích thước màn hình trên các thiết bị.</p>
+</blockquote>
+<h2 id="responsive-design-là-gì">Responsive Design là gì?</h2>
+<p>Hiểu một cách đơn giản, Responsive Design là kỹ thuật thiết kế web, mà trang web này có thể đáp ứng nhiều kích cỡ giao diện trên nhiều thiết bị khác nhau, không bị vỡ, mất giao diện, nội dung. Theo đó quy trình thiết kế và phát triển web sẽ đáp ứng mọi thiết bị và môi trường của người dùng theo các tiêu chí kích thước và chiều của màn hình thiết bị.</p>
+<p>Có hai xu hướng thiết kế <strong>Responsive Design</strong> chính, đó là <strong>Desktop first</strong> và <strong>Mobile first</strong>.
+<img src="/images/responsive1.png" alt="Responsive">
+<strong>- Desktop first:</strong> Đối với phương pháp này, giao diện sẽ được ưu tiên code sao cho phù hợp với màn hình Desktop trước rồi sau đó mới tiếp tục thêm code CSS mới vào bằng <strong>@media query</strong> sao cho giao diện và bố cục trang web của bạn phù hợp với các màn hình bé hơn (tablet, mobile).<br>
+<strong>- Mobile first:</strong> Ở phương pháp này, giao diện web sẽ được thực hiện theo hướng từ thiết bị có màn hình nhỏ (Mobile) rồi mới đến các thiết bị có màn hình lớn hơn (Tablet, Laptop, Desktop), và cũng sử dụng <strong>@media query</strong> để thực hiện quá trình này.<br>
+<img src="/images/responsive4.png" alt="Responsive"></p>
+<p>Hầu hết toàn bộ các nội dung trong website đều cần responsive, tuy nhiên có một số vị trí ta cần đặc biệt lưu tâm, đó là: <strong>menu, các cột layout, font size và image</strong>.</p>
+<p>Tiếp theo đây chúng ta sẽ tìm hiểu các yếu tố quan trọng khi thực hiện <strong>responsive</strong> một trang web.</p>
+<h2 id="viewport">Viewport</h2>
+<p><strong>Viewport</strong> là khung hình người dùng nhìn thấy trên thiết bị của họ khi vào một trang web bất kì. Với mỗi thiết khác nhau lại có viewport khác nhau. Nếu trang web cố định kích thước thì trình duyệt sẽ tự động thu nhỏ nội dung khi chuyển từ màn hình máy tính qua smartphone - điều này tạo nên trải nghiệm không tốt cho người dùng.</p>
+<p>HTML5 cung cấp cho ta phương pháp kiểm soát điều này một cách dễ dàng thông qua thẻ <strong>meta</strong>.
+<img src="/images/responsive2.png" alt="Responsive"></p>
+<p><strong>width=device-width:</strong> thiết lập chiều rộng của trang web theo chiều rộng của thiết bị.<br>
+<strong>initial-scale=1.0:</strong> thiết lập mức độ zoom ban đầu khi trang web được load bởi trình duyệt.
+<img src="/images/responsive3.png" alt="Responsive"></p>
+<h2 id="grid-view">Grid-View</h2>
+<p>Rất nhiều trang web được xây dựng trên <strong>grid-view</strong>, có nghĩa là trang web được chia thành các cột đều nhau. Một <strong>grid-view</strong> thường có 12 cột ứng với 100% độ rộng và sẽ thu nhỏ hoặc mở rộng khi bạn thay đổi kích thước trình duyệt. Việc sử dụng <strong>grid-view</strong> sẽ giúp bạn dễ dàng đặt vị trí các phần tử trên trang hơn, thuận lợi cho việc thực hiện responsive về sau.
+<img src="/images/responsive6.png" alt="Responsive"></p>
+<h2 id="media-queries">Media Queries</h2>
+<p><strong>Media Queries</strong> là một kỹ thuật CSS được giới thiệu trong CSS3. Ta sử dụng cú pháp <strong>@media</strong> để bao gồm một khối các thuộc tính CSS chỉ khi một điều kiện nhất định là đúng. Nói một cách đơn giản là ta sẽ định nghĩa CSS riêng cho một nhóm các thiết bị có kích thước giống nhau.</p>
+<h3 id="flexbox-và-grid-layout">FlexBox và Grid Layout</h3>
+<p>Việc sử dụng thuần thục và hợp lý <strong>FlexBox</strong> và <strong>Grid</strong> trên các đối tượng phù hợp sẽ tạo ra trải nghiệm responsive trên layout và nội dung rất tốt trên mọi trình duyệt. Bằng cách kết hợp 2 đối tượng này với <strong>media queries</strong>, ta có thể tạo ta các layout khác nhau dựa trên kích thước màn hình của thiết bị.</p>
+<p>Như trong ví dụ bên dưới với <strong>FlexBox</strong> sử dụng phương pháp responsive <strong>Mobile first</strong>, ta có thể sử dụng <strong>flex-direction: row</strong> trên các thiết bị có màn hình lớn, và chuyển sang <strong>flex-direction: column</strong> trên các thiết bị màn hình nhỏ hơn.
+<img src="/images/responsive5.png" alt="Responsive"><br>
+<img src="/images/responsive7.png" alt="Responsive">
+Một công cụ hữu ích khác trong <strong>Chrome Dev Tools</strong>, ta có thể sử dụng <strong>device toolbar</strong> để mô phỏng nội dung được hiển thị trên màn hình của các thiết bị.
+<img src="/images/responsive8.png" alt="Responsive"></p>
+<h3 id="breakpoints">Breakpoints</h3>
+<p>Khi ta thay đổi kích thước của trình duyệt, ta chú ý thấy kích thước của <strong>viewport</strong> sẽ được hiển thị ở góc phải trên của màn hình. Dựa vào kích thước này và <strong>breakpoints</strong> ta có thể chủ động căn chỉnh sao cho phù hợp với kích cỡ các thiết bị mong muốn.
+<img src="/images/responsive9.png" alt="Responsive">
+<img src="/images/responsive10.png" alt="Responsive"></p>
+<p>Ta sẽ áp dụng <strong>media queries</strong> để thực hiện responsive cho man hình trên các thiết bị lớn hơn, cụ thể ở đây là với kích thước &gt; 600px, <strong>flex-direction</strong> sẽ chuyển sang <strong>row</strong>.
+<img src="/images/responsive11.png" alt="Responsive"></p>
+<h2 id="sử-dụng-thư-viện-và-frameworks">Sử dụng thư viện và frameworks</h2>
+<p>Hiện nay, có rất nhiều các thư viện và CSS frameworks hỗ trợ giúp cho việc responsive một trang web trở nên linh động, dễ dàng và hiệu quả hơn rất nhiều, các frameworks này cũng dựa trên <strong>media queries</strong>, <strong>breakpoints</strong> và các tuỳ chỉnh khác để giúp đỡ cho các lập trình viên thực hiện công việc responsive và styling của mình dễ dàng hơn. Tuy nhiên, ta không nên quá dựa dẫm vào các thư viện, frameworks, đây chỉ là các công cụ, ta cần nắm vững các kiến thức nền để có thể xử lý bất cứ tình huống và bài toán nào.
+<img src="/images/responsive12.png" alt="Responsive"></p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CSS Cơ Bản: Positioning - Loc Vu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.bcad1e514a22ceb68d813f09542ea3bcf5c25c03aec78dbfa04a2536721748bc.css">
+  
+
+  
+    <meta name="description" content="Position trong CSS được sử dụng để định vị vị trí hiển thị của các phần tử thẻ HTML, với 5 thuộc tính cơ bản bao gồm Static, Relative, Absolute, Fixed và Sticky."/>
+    <meta property="og:title" content="CSS Cơ Bản: Positioning"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/positioning/"/>
+    
+    <meta property="og:description" content="Position trong CSS được sử dụng để định vị vị trí hiển thị của các phần tử thẻ HTML, với 5 thuộc tính cơ bản bao gồm Static, Relative, Absolute, Fixed và Sticky."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@zerostaticio"/>
+    <meta name="twitter:creator" content="@zerostaticio"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Loc Vu</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>CSS Cơ Bản: Positioning<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <h2 id="position-trong-css-là-gì">Position trong CSS là gì?</h2>
+<p>Position trong CSS được sử dụng để định vị vị trí hiển thị của các phần tử thẻ HTML.</p>
+<p>Khi nói đến vị trí, ta thường hình dung ra 4 vị trí chính, bao gồm: trên (top) - dưới (bottom) - trái (left) - phải (right). Khi thực hiện layout, ta sẽ cần quan tâm đến nhiều vị trí phức tạp hơn:<br>
+<img src="/images/position1.png" alt="Position"></p>
+<p>Position trong CSS có 5 thuộc tính cơ bản, bao gồm:<br>
+<strong>Static</strong> - Mặc định, các phần tử HTML được định vị tĩnh. Không bị ảnh hưởng bởi các thuộc tính left, right, top, bottom.<br>
+<strong>Relative</strong> - Vị trí của phần tử sẽ tương đối so với vị trí ban đầu của nó.<br>
+<strong>Absolute</strong> - Vị trí tương đối so với phần tử ông/cha gần nhất. <br>
+<strong>Fixed</strong> - Vị trí sẽ nằm cố định một chỗ, tương đối với Viewport, dù có làm gì, phần tử vẫn nằm cố định 1 vị trí trên màn hình.<br>
+<strong>Sticky</strong> - Vị trí của phần tử sẽ được định vị khi người dùng sử dụng thanh cuộn.<br>
+Ngoài ra còn có hai thuộc tính khác là <strong>Initial</strong> và <strong>Inherit</strong>.</p>
+<p>Để dễ dàng hình dung, ta sẽ bắt đầu ví dụ với 3 boxes với vị trí mặc định như bên dưới:
+<img src="/images/position0.png" alt="Position"></p>
+<h2 id="relative">Relative</h2>
+<p>Vị trí của phần tử sẽ tương đối so với vị trí ban đầu của nó. Ta có thể sử dụng các thuộc tính <strong>left, right, top, bottom</strong> để định vị vị trí của nó. Vị trí của các phần tử khác xung quanh sẽ không bị ảnh hưởng.</p>
+<p>Trong ví dụ bên dưới, vị trí của <strong>box-two</strong> đã được dịch chuyển cách vị trí ban đầu của nó 3rem left và bottom. <strong>box-one</strong> và <strong>box-three</strong> không bị ảnh hưởng.<br>
+<img src="/images/position2.png" alt="Position"></p>
+<h2 id="absolute">Absolute</h2>
+<p>Vị trí tương đối so với phần tử ông/cha gần nhất, nếu không tìm thấy nó sẽ thiết lập vị trí tương đối so với Viewport của trình duyệt.<br>
+Phần tử ông/cha cần được thiết lập <strong>position: relative</strong>.<br>
+Khi vị trí của phần tử được set <strong>absolute</strong>, nó sẽ bị tách biệt, xoá ra khỏi flow thông thường của trang.</p>
+<p>Trong ví dụ bên dưới, phần tử cha <strong>boxes</strong> được set <strong>position: relative</strong>, chú ý vị trí <strong>box-three</strong> đã được tự động đưa lên.<br>
+<img src="/images/position3.png" alt="Position"></p>
+<p>Khi phần tử ông/cha không được set <strong>position: relative</strong>, nó sẽ thiết lập vị trí tương đối với Viewport.<br>
+Trong ví dụ bên dưới, ta chú ý thấy <strong>box-two</strong> đã nằm bên ngoài container.<br>
+<img src="/images/position4.png" alt="Position"></p>
+<h2 id="fixed">Fixed</h2>
+<p>Phần tử được định vị bằng <strong>fixed</strong> sẽ có vị trí tương đối so với Viewport trên trình duyệt. Cũng bị tách biệt ra khỏi flow thông thường của trang như <strong>absolute</strong>. Vị trí của nó sẽ luôn cố định.<br>
+<img src="/images/viewport.png" alt="Viewport"><br>
+Một trong những ứng dụng của <strong>fixed</strong> là khi ta muốn thanh navigation luôn luôn nằm ở vị trí trên cùng của trang.</p>
+<p>Trong ví dụ bên dưới, ta chú ý thấy <strong>box-two</strong> đã nằm bên ngoài container, vị trí của nó lúc này tương đối so với Viewport. Khi cuộn trang, vị trí của nó vẫn luôn cố đinh (<strong>top: 0</strong>).<br>
+<img src="/images/position5.gif" alt="Position"></p>
+<h2 id="sticky">Sticky</h2>
+<p>Phần tử được định vị bằng <strong>sticky</strong> sẽ được coi như có vị trí tương đối, cho đến khi thanh cuộn đạt đến một ngưỡng được chỉ định, khi đó phần tử sẽ có vị trí cố định tại nơi được yêu cầu. Tức linh động chuyển từ trạng thái <strong>relative</strong> sang <strong>fixed</strong> và ngược lại.</p>
+<p>Trong ví dụ bên dưới, ban đầu, <strong>box-two</strong> sẽ có vị trí mặc định, cho tới khi người dùng thực hiện thao tác cuộn trang, khi <strong>box-two</strong> đạt ngưỡng được chỉ định <strong>top: 1rem</strong>, tức vị trí của nó cách top một khoảng <strong>1rem</strong>, <strong>fixed</strong> sẽ được kích hoạt, nó sẽ được đính cố định tại vị trí này. Khi người dùng cuộn trang trở lại, <strong>box-two</strong> sẽ được đính lại vị trí đầu nếu đi qua vị trí ban đầu của nó (<strong>relative</strong>).
+<img src="/images/position6.gif" alt="Position"></p>
+<p>Một lưu ý nữa là <strong>sticky</strong> không hỗ trợ trên IE và các phiên bản trình duyệt cũ, nên ta cần cân nhắc kĩ khi sử dụng. Ta có thể tham khảo cụ thể hơn ở <a href="https://caniuse.com/?search=sticky">đây</a>
+<img src="/images/position7.png" alt="Position"></p>
+<h2 id="initial-và-inherit-không-chỉ-có-trong-position-mà-còn-có-trong-hầu-hết-các-thuộc-tính-khác-của-css">Initial và Inherit (Không chỉ có trong Position mà còn có trong hầu hết các thuộc tính khác của CSS.)</h2>
+<p><strong>Initial</strong> - Thiết lập về giá trị position mặc định của nó.<br>
+<strong>Inherit</strong> - Kế thừa thuộc tính position từ phần tử cha.</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

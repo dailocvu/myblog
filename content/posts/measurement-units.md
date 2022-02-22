@@ -1,5 +1,5 @@
 ---
-title: "[Tuần 2] CSS Cơ Bản: Measurement Units"
+title: "CSS Cơ Bản: Measurement Units"
 date: 2022-01-25
 description: "CSS hỗ trợ nhiều đơn vị đo lường được chia thành hai loại chính, là đơn vị tuyệt đối và đơn vị tương đối."
 ---

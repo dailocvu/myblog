@@ -1,5 +1,5 @@
 ---
-title: "[Tuần 3] CSS Cơ Bản: Responsive Design"
+title: "CSS Cơ Bản: Responsive Design"
 date: 2022-02-05
 description: "Ngày nay, trong lĩnh vực lập trình web, ta nhanh chóng nhận ra rằng không thể theo kịp với sự phát triển chóng mặt của các thiết bị điện tử mới với độ phân giải màn hình khác nhau. Chính vì vậy thay vì thiết kế từng phiên bản phù hợp cho từng thiết bị, thì giải pháp tối ưu là sử dụng Responsive Design - giúp trang web của chúng ta có thể phù hợp với tất cả kích thước màn hình trên các thiết bị."
 ---

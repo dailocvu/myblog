@@ -1,5 +1,5 @@
 ---
-title: "[Tuần 3] CSS Cơ Bản: Grid Layout"
+title: "CSS Cơ Bản: Grid Layout"
 date: 2022-01-28
 description: "Trong bài viết trước ta đã tìm hiểu về FlexBox, tuy nhiên ứng dụng web ngày nay giao diện ngày càng phức tạp nên việc chỉ sử dụng FlexBox thực sự vẫn chưa tối ưu, cần nhiều giải pháp hơn để tạo ra layout một cách nhanh và tối ưu nhất. Vì thế mà Grid Layout được sinh ra để giải quyết vấn đề này."
 ---

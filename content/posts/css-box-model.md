@@ -1,5 +1,5 @@
 ---
-title: "[Tuần 2] CSS Cơ Bản: Box Model"
+title: "CSS Cơ Bản: Box Model"
 date: 2022-01-21
 description: "Trong tuần này, chúng ta bắt đầu tìm hiểu về các khái niệm cơ bản của CSS.
 Bắt đầu với nền tảng quan trọng đầu tiên - CSS Box Model."

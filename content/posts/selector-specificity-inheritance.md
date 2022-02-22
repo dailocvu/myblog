@@ -1,5 +1,5 @@
 ---
-title: "[Tuần 2] CSS Cơ Bản: Selectors - Cascade/Specificity - Inheritance"
+title: "CSS Cơ Bản: Selectors - Cascade/Specificity - Inheritance"
 date: 2022-01-24
 description: "Sau khi tìm hiểu về Box Model, ta bắt đầu với các khái niệm của CSS, tìm hiểu về các Selectors, để có thể chọn được thẻ mà mình mong muốn, cũng như về hệ thống phân cấp, tính kế thừa của chúng."
 ---

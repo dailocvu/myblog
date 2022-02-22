@@ -1,5 +1,5 @@
 ---
-title: "[Tuần 3] CSS Cơ Bản: Animation Cơ Bản"
+title: "CSS Cơ Bản: Animation Cơ Bản"
 date: 2022-01-31
 description: "Một trang web đẹp và hiện đại không thể thiếu những hiệu ứng, chuyển động mượt mà và đẹp mắt. Trong bài viết này, ta sẽ tìm hiểu về các thành phần tạo nên các hiệu ứng ấy, bao gồm transformations, transitions và animations."
 ---

@@ -1,5 +1,5 @@
 ---
-title: "[Tuần 2] CSS Cơ Bản: Positioning"
+title: "CSS Cơ Bản: Positioning"
 date: 2022-01-26
 description: "Position trong CSS được sử dụng để định vị vị trí hiển thị của các phần tử thẻ HTML, với 5 thuộc tính cơ bản bao gồm Static, Relative, Absolute, Fixed và Sticky."
 ---

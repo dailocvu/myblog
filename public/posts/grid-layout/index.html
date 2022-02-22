@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CSS Cơ Bản: Grid Layout - Loc Vu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.bcad1e514a22ceb68d813f09542ea3bcf5c25c03aec78dbfa04a2536721748bc.css">
+  
+
+  
+    <meta name="description" content="Trong bài viết trước ta đã tìm hiểu về FlexBox, tuy nhiên ứng dụng web ngày nay giao diện ngày càng phức tạp nên việc chỉ sử dụng FlexBox thực sự vẫn chưa tối ưu, cần nhiều giải pháp hơn để tạo ra layout một cách nhanh và tối ưu nhất. Vì thế mà Grid Layout được sinh ra để giải quyết vấn đề này."/>
+    <meta property="og:title" content="CSS Cơ Bản: Grid Layout"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/posts/grid-layout/"/>
+    
+    <meta property="og:description" content="Trong bài viết trước ta đã tìm hiểu về FlexBox, tuy nhiên ứng dụng web ngày nay giao diện ngày càng phức tạp nên việc chỉ sử dụng FlexBox thực sự vẫn chưa tối ưu, cần nhiều giải pháp hơn để tạo ra layout một cách nhanh và tối ưu nhất. Vì thế mà Grid Layout được sinh ra để giải quyết vấn đề này."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@zerostaticio"/>
+    <meta name="twitter:creator" content="@zerostaticio"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Loc Vu</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>CSS Cơ Bản: Grid Layout<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <blockquote>
+<p>Trong bài viết trước ta đã tìm hiểu về FlexBox, tuy nhiên ứng dụng web ngày nay giao diện ngày càng phức tạp nên việc chỉ sử dụng FlexBox thực sự vẫn chưa tối ưu, cần nhiều giải pháp hơn để tạo ra layout một cách nhanh và tối ưu nhất. Vì thế mà Grid Layout được sinh ra để giải quyết vấn đề này. Với Grid, ta có thể hiểu đơn giản là layout dưới dạng lưới.</p>
+</blockquote>
+<p><img src="/images/grid1.png" alt="Grid"></p>
+<h2 id="grid-layout-là-gì">Grid Layout là gì?</h2>
+<p>Ý tưởng chính đằng sau <strong>Grid Layout</strong> là chia trang web thành nhiều cột và hàng, cùng với khả năng chỉ định vị trí và kích thước của các building block element dựa trên kích thước, vị trí, và layer của hàng và cột ta đã tạo.</p>
+<p>Một ví dụ đơn giản mà ta thường hay gặp là photo gallery, chứa nhiều bức ảnh bước sắp xếp dưới dạng lưới.
+<img src="/images/grid2.png" alt="Grid"></p>
+<p>Một ví dụ khác về layout của phần lớn các website hiện nay, ta cũng có thể nhận thấy chúng được hiển thị dưới dạng <strong>Grid Layout</strong>
+<img src="/images/grid3.png" alt="Grid"></p>
+<h2 id="các-thuật-ngữ-và-thuộc-tính-quan-trọng-trong-grid-layout">Các thuật ngữ và thuộc tính quan trọng trong Grid Layout</h2>
+<h3 id="định-nghĩa-một-grid">Định nghĩa một Grid</h3>
+<p>Để định nghĩa một <strong>Grid</strong>, đầu tiên ta cần một <strong>container</strong> và set cho nó <strong>display: grid</strong>, sau đó ta cần định nghĩa <strong>số hàng</strong> và <strong>cột</strong> mong muốn.
+<img src="/images/grid4.png" alt="Grid">
+Ví dụ, ta muốn tạo 1 <strong>Grid</strong> với kích thước <strong>3x2</strong>
+<img src="/images/grid5.png" alt="Grid">
+Ta có thể sử dụng <strong>Inspect</strong> và chọn tab <strong>Layout</strong> để xem thêm các tuỳ chọn hiển thị cho Grid và làm việc với chúng dễ dàng hơn.<br>
+<img src="/images/grid8.gif" alt="Grid"><br>
+Ta nhận thấy phần thông số các kích thước bị lặp lại, ta có thể sử dụng <strong>repeat()</strong> để tránh việc trùng lặp.
+<img src="/images/grid6.png" alt="Grid">
+Kết hợp với sử dụng shorthand.<br>
+<img src="/images/grid7.png" alt="Grid"></p>
+<h3 id="căn-chỉnh-vị-trí-các-items">Căn chỉnh vị trí các Items</h3>
+<p><img src="/images/grid9.png" alt="Grid"><br>
+Các items ban đầu sẽ được căn chỉnh ở vị trí <strong>top-left</strong> trong ô của chúng. Nhưng ta có thể dễ dàng di chuyển chúng theo cách mình mong muốn, dọc theo trục ngang/dọc bằng cách sử dụng các thuộc tính: <strong>justify-items</strong> và <strong>align-items</strong>.
+<img src="/images/grid10.png" alt="Grid"></p>
+<h3 id="justify-items">Justify Items</h3>
+<p>Căn chỉnh các items theo <strong>trục ngang</strong> (horizontal axis). Với nhiều các thuộc tính như: <strong>start | center | end | flex-start | flex-end | baseline | stretch | &hellip;</strong> và nhiều những thuộc tính khác nữa, ta sẽ chỉ ví dụ một số trường hợp thường dùng.
+<img src="/images/grid11.png" alt="Grid"></p>
+<h3 id="align-items">Align Items</h3>
+<p>Tương tự như <strong>justify-items</strong>, nhưng <strong>align-items</strong> căn chỉnh các items theo <strong>trục dọc</strong> (vertical axis), với các thuộc tính tương tự.
+<img src="/images/grid12.png" alt="Grid"></p>
+<h3 id="căn-chỉnh-vị-trí-container">Căn chỉnh vị trí Container</h3>
+<h3 id="justify-content">Justify Content</h3>
+<p>Thuộc tính <strong>justify-content</strong> sẽ di chuyển toàn bộ khối <strong>container</strong> chứa các <strong>items</strong>, theo <strong>trục ngang</strong> (horizontal axis), với các thuộc tính như <strong>start | center | end | stretch | space-around | space-between | space-evenly</strong>.
+<img src="/images/grid13.png" alt="Grid"></p>
+<h3 id="align-content">Align Content</h3>
+<p>Thuộc tính <strong>align-content</strong> sẽ di chuyển toàn bộ khối <strong>container</strong> chứa các <strong>items</strong>, theo <strong>trục dọc</strong> (vertical axis), với các thuộc tính tương tự <strong>justify-content</strong>.
+<img src="/images/grid14.png" alt="Grid"></p>
+<h3 id="đơn-vị-fr-fraction">Đơn vị fr (fraction)</h3>
+<p>Trong một vài trường hợp, ta muốn kích thước của item tương ứng với tỉ lệ phần còn trống trong <strong>container</strong>, đó là lúc ta sử dụng đơn vị <strong>fr</strong></p>
+<p>Ta có ví dụ:
+<img src="/images/grid15.png" alt="Grid">
+Với đơn vị <strong>fr</strong>, các cột sẽ chiếm phần kích thước tương ứng <strong>3 phần</strong> và <strong>7 phần</strong> của khoảng không gian trống.<br>
+Ta chú ý có đơn vị <strong>auto</strong>, khi ta thay đổi kích thước trình duyệt, hàng có kích thước <strong>auto</strong> sẽ tự động co giãn, trong khi các hàng vói kích thước tuyệt đối sẽ luôn cố định (100px).<br>
+<img src="/images/grid16.gif" alt="Grid"></p>
+<h3 id="grid-gap">Grid Gap</h3>
+<p>Thuộc tính này giúp chúng ta tạo khoảng cách giữa các phần tử với nhau theo cột và hàng. Bao gồm các thuộc tính: <strong>row-gap | column gap | gap (shorthand)</strong>.
+<img src="/images/grid17.png" alt="Grid">
+<img src="/images/grid18.png" alt="Grid"></p>
+<h3 id="placing-items">Placing Items</h3>
+<p>Bằng cách áp dụng các thuộc tính này cho các items, ta có thể kiểm soát chính xác vị trí nơi mà ta muốn đặt chúng.
+<img src="/images/grid19.png" alt="Grid">
+Giả sử ta có thuộc tính <strong>grid-column</strong> với giá trị <strong>2</strong> như bên dưới, ta chú ý thấy vị trí của <strong>box-one</strong> đã dịch chuyển qua vị trí thứ 2, và các items khác cũng tự động dịch chuyển sắp xếp theo chiều từ <strong>top-left</strong> đến <strong>bottom-right</strong>.
+<img src="/images/grid20.png" alt="Grid"></p>
+<p>Mặc định, item chỉ chiếm 1 cột, vậy nếu ta muốn item chiếm nhiều hơn 1 cột thì sao? Ta có thể dựa vào giá trị <strong>line numbers</strong> mà điều chỉnh kích thước mình mong muốn. Như trong ví dụ bên dưới, <strong>box-one</strong> được điều chỉnh kích thước chiếm hết hàng đầu, từ 1 - 3, hoặc dùng <strong>span</strong> để nêu rõ số lượng cụ thể. Hai cách dùng bên dưới tương đương nhau.
+<img src="/images/grid21.png" alt="Grid"></p>
+<p>Tương tự với <strong>grid-row</strong>
+<img src="/images/grid22.png" alt="Grid"></p>
+<h3 id="bố-cục-items-dựa-trên-tên-vị-trí">Bố cục Items dựa trên tên vị trí</h3>
+<p>Một cách cực kỳ hay và hữu ích cho phép chúng ta tạo bố cục layout một cách nhanh chóng, dễ dàng và đơn giản hơn nhiều, dựa vào cách đặt tên cho các vị trí.
+<img src="/images/grid23.png" alt="Grid">
+Như ví dụ bên dưới, ta set thuộc tính <strong>grid-template-areas</strong> cho <strong>container</strong> với các tên tuỳ chọn. Sau đó thiết lập <strong>grid-area</strong> cho các <strong>items</strong> tương ứng với tên mình mong muốn.
+<img src="/images/grid24.png" alt="Grid"></p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

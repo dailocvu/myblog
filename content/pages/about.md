@@ -5,4 +5,4 @@ menu:
     name: "About"
 ---
 
-## Loc Vu - Frontend Web Developer Intern At OnPoint VN
+## Loc Vu - Frontend Web Developer
