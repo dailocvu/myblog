@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CSS Cơ Bản: Box Model - Loc Vu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="http://iamkryonics.github.com/myblog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/myblog/css/style.min.bcad1e514a22ceb68d813f09542ea3bcf5c25c03aec78dbfa04a2536721748bc.css">
+  
+
+  
+    <meta name="description" content="Trong tuần này, chúng ta bắt đầu tìm hiểu về các khái niệm cơ bản của CSS. Bắt đầu với nền tảng quan trọng đầu tiên - CSS Box Model."/>
+    <meta property="og:title" content="CSS Cơ Bản: Box Model"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://iamkryonics.github.com/myblog/posts/css-box-model/"/>
+    
+    <meta property="og:description" content="Trong tuần này, chúng ta bắt đầu tìm hiểu về các khái niệm cơ bản của CSS. Bắt đầu với nền tảng quan trọng đầu tiên - CSS Box Model."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@zerostaticio"/>
+    <meta name="twitter:creator" content="@zerostaticio"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="http://iamkryonics.github.com/myblog/">Loc Vu</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/myblog/myblog/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/myblog/myblog/posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>CSS Cơ Bản: Box Model<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <blockquote>
+<p>Trong tuần này, chúng ta bắt đầu tìm hiểu về các khái niệm cơ bản của CSS.
+Bắt đầu với nền tảng quan trọng đầu tiên - CSS Box Model.</p>
+</blockquote>
+<h2 id="css-box-model-là-gì">CSS Box Model là gì?</h2>
+<p>Trong CSS, thuật ngữ <strong>Box Model</strong> được sử dụng khi nói về thiết kế và bố cục.<br>
+Khi trình duyệt render một phần tử HTML, chúng sẽ được bao bọc xung quanh bởi một chiếc hộp vô hình, bao gồm nội dung, padding, border và margin.
+<img src="/images/box-model.jpg" alt="Box model"></p>
+<h2 id="bao-gồm">Bao gồm:</h2>
+<p><strong>Content</strong> - nội dung trong hộp, nơi hiển thị văn bản, hình ảnh,&hellip;<br>
+<strong>Padding</strong> - phần khoảng trắng xung quanh nội dung, trong suốt.<br>
+<strong>Border</strong> - đường viền xung quanh nội dung và padding.<br>
+<strong>Margin</strong> - phần lề bên ngoài đường viền, trong suốt.</p>
+<p>Giả sử ta có một phần tử <strong>p</strong>, khi rê chuột vào phần tử này trong HTML DOM, phần tử này sẽ được biểu diễn dạng Box Model như bên dưới:<br>
+<img src="/images/box-2.jpg" alt="Box model"></p>
+<p><strong>Content</strong> - kích thước của nội dung, với chiều dài chiếm toàn bộ.<br>
+<strong>Padding</strong> - không có.<br>
+<strong>Border</strong> - không có.<br>
+<strong>Margin</strong> - 16, mặc định của trình duyệt.</p>
+<p>Ta có thể thay đổi các thông số trên dễ dàng với 1 vài cú pháp CSS:
+<img src="/images/box-3.png" alt="Box model"></p>
+<h2 id="tính-toán-kích-thước-thực">Tính toán kích thước thực</h2>
+<p>Khi thiết lập đặc tính chiều cao và rộng (width, height) của phần tử bằng CSS, ta chỉ thiết lập cho phần nội dung mà thôi. (Mặc định <strong>box-sizing: content-box</strong>). Để tính toán chính xác kích thước phần tử, cần tính toán thêm cả phần padding và border - là 2 thành phần ảnh hưởng tới kích thước thực của nội dung.</p>
+<p>Như ví dụ bên trên, phần kích thước thực sẽ là:<br>
+<strong>Chiều cao:</strong> 18.286 + 10 + 10 + 5 + 5 = 48.286<br>
+<strong>Chiều rộng:</strong> 481.429 + 20 + 20 + 5 + 5 = 531.429</p>
+<p>Tuy nhiên, việc luôn phải tính toán thêm kích thước của các thành phần khác khiến mọi thứ trở lên khó khăn và bất tiện khi ta cần thay đổi kích thước của một giá trị. Do đó, ta có thể sử dụng việc thiết lập vùng kích thước tính toán cho cả padding và border: <strong>box-sizing: border-box</strong>.</p>
+<p>Ví dụ khi thiết lập kích thước chiều cao và rộng của phần tử bằng <strong>100px</strong>. Dễ dàng nhận thấy ở <strong>border-box</strong> phần kích thước của nội dung đã được tính toán cùng padding và border.
+<img src="/images/box-4.png" alt="Box model"></p>
+<h2 id="thuộc-tính-margin-có-tính-collapse">Thuộc tính Margin có tính collapse</h2>
+<p>Không như khi ta thêm padding và border, phần kích thước được tăng hoặc giảm sẽ tác động trực tiếp nội dung và ta sẽ dễ dàng nhận ra. Tuy nhiên, nếu hai phần tử đều có thuộc tính margin nằm cạnh nhau, phần kích thước margin sẽ được tính bằng phần tử có kích thước lớn hơn.</p>
+<p>Trong trường hợp dưới đây, thuộc tính margin được thiết lập với giá trị là <strong>20px</strong> cho cả hai phần tử <strong>p</strong>. Tuy nhiên, khoảng cách giữa hai phần tử chỉ là <strong>20px</strong>.<br>
+<img src="/images/margin.png" alt="Margin"></p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com" title="github" target="_blank" rel="noopener">
+          <img src="/myblog/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com" title="linkedin" target="_blank" rel="noopener">
+          <img src="/myblog/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/myblog/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

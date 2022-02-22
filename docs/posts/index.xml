@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Loc Vu</title>
+    <link>http://iamkryonics.github.com/myblog/posts/</link>
+    <description>Recent content in Blog on Loc Vu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://iamkryonics.github.com/myblog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS Cơ Bản: Responsive Design</title>
+      <link>http://iamkryonics.github.com/myblog/posts/responsive-design/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://iamkryonics.github.com/myblog/posts/responsive-design/</guid>
+      <description>Ngày nay, trong lĩnh vực lập trình web, ta nhanh chóng nhận ra rằng không thể theo kịp với sự phát triển chóng mặt của các thiết bị điện tử mới với độ phân giải màn hình khác nhau. Chính vì vậy thay vì thiết kế từng phiên bản phù hợp cho từng thiết bị, thì giải pháp tối ưu là sử dụng Responsive Design - giúp trang web của chúng ta có thể phù hợp với tất cả kích thước màn hình trên các thiết bị.</description>
+    </item>
+    
+    <item>
+      <title>CSS Cơ Bản: Animation Cơ Bản</title>
+      <link>http://iamkryonics.github.com/myblog/posts/basic-animation/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://iamkryonics.github.com/myblog/posts/basic-animation/</guid>
+      <description>Một trang web đẹp và hiện đại không thể thiếu những hiệu ứng, chuyển động mượt mà và đẹp mắt. Trong bài viết này, ta sẽ tìm hiểu về các thành phần tạo nên các hiệu ứng ấy, bao gồm transformations, transitions và animations.
+ Transformations Transform là những thuộc tính dùng để &amp;ldquo;biến đổi&amp;rdquo; các phần tử, cho phép chúng thay đổi vị trị, hình dáng, kích thước hay xoay phần tử theo các chiều.</description>
+    </item>
+    
+    <item>
+      <title>CSS Cơ Bản: Grid Layout</title>
+      <link>http://iamkryonics.github.com/myblog/posts/grid-layout/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://iamkryonics.github.com/myblog/posts/grid-layout/</guid>
+      <description>Trong bài viết trước ta đã tìm hiểu về FlexBox, tuy nhiên ứng dụng web ngày nay giao diện ngày càng phức tạp nên việc chỉ sử dụng FlexBox thực sự vẫn chưa tối ưu, cần nhiều giải pháp hơn để tạo ra layout một cách nhanh và tối ưu nhất. Vì thế mà Grid Layout được sinh ra để giải quyết vấn đề này. Với Grid, ta có thể hiểu đơn giản là layout dưới dạng lưới.</description>
+    </item>
+    
+    <item>
+      <title>CSS Cơ Bản: Flexible Box Layout (FlexBox)</title>
+      <link>http://iamkryonics.github.com/myblog/posts/flexbox/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://iamkryonics.github.com/myblog/posts/flexbox/</guid>
+      <description>Dàn bố cục cho trang là một trong những công việc quan trọng nhất khi ta bắt đầu lập trình giao diện một trang web. Có hai cách để ta có thể dàn trang một cách linh hoạt và dễ dàng là sử dụng FlexBox và Grid Layout, trong bài viết này, ta sẽ tìm hiểu về FlexBox và các đặc điểm của nó.
+ FlexBox là gì? FlexBox (hay Flexible Box) là một kiểu bố cục trang theo một hướng (chiều ngang/dọc), có khả năng tự cân đối kích thước, thay đổi chiều rộng/chiều cao và thứ tự phần tử bên trong để phù hợp với tất cả các loại thiết bị hiển thị và kích thước màn hình.</description>
+    </item>
+    
+    <item>
+      <title>CSS Cơ Bản: Positioning</title>
+      <link>http://iamkryonics.github.com/myblog/posts/positioning/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://iamkryonics.github.com/myblog/posts/positioning/</guid>
+      <description>Position trong CSS là gì? Position trong CSS được sử dụng để định vị vị trí hiển thị của các phần tử thẻ HTML.
+Khi nói đến vị trí, ta thường hình dung ra 4 vị trí chính, bao gồm: trên (top) - dưới (bottom) - trái (left) - phải (right). Khi thực hiện layout, ta sẽ cần quan tâm đến nhiều vị trí phức tạp hơn:
+Position trong CSS có 5 thuộc tính cơ bản, bao gồm:</description>
+    </item>
+    
+    <item>
+      <title>CSS Cơ Bản: Measurement Units</title>
+      <link>http://iamkryonics.github.com/myblog/posts/measurement-units/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://iamkryonics.github.com/myblog/posts/measurement-units/</guid>
+      <description>Các đơn vị đo lường trong CSS là gì? CSS hỗ trợ nhiều đơn vị đo lường được chia thành hai loại chính, đơn vị tuyệt đối và đơn vị tương đối.
+Đơn vị tuyệt đối: là những đơn vị mà giá trị của nó không bao giờ thay đổi và không bị ảnh hưởng bởi các thành phần khác. Tức là trong mọi kích thước màn hình thì kích thước của nó vẫn như thế.</description>
+    </item>
+    
+    <item>
+      <title>CSS Cơ Bản: Selectors - Cascade/Specificity - Inheritance</title>
+      <link>http://iamkryonics.github.com/myblog/posts/selector-specificity-inheritance/</link>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://iamkryonics.github.com/myblog/posts/selector-specificity-inheritance/</guid>
+      <description>Sau khi tìm hiểu về Box Model, ta bắt đầu với các khái niệm của CSS, tìm hiểu về các Selectors, để có thể chọn được thẻ mà mình mong muốn, cũng như về hệ thống phân cấp, tính kế thừa của chúng.
+ Selectors là gì? Như bạn biết trong một file HTML, có rất nhiều thẻ, cũng như các ID, class cho các thẻ để phân biệt, vậy trong CSS khi ta muốn truy xuất tới các phần tử này để styling, ta cần sự trợ giúp của các Selectors.</description>
+    </item>
+    
+    <item>
+      <title>CSS Cơ Bản: Box Model</title>
+      <link>http://iamkryonics.github.com/myblog/posts/css-box-model/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://iamkryonics.github.com/myblog/posts/css-box-model/</guid>
+      <description>Trong tuần này, chúng ta bắt đầu tìm hiểu về các khái niệm cơ bản của CSS. Bắt đầu với nền tảng quan trọng đầu tiên - CSS Box Model.
+ CSS Box Model là gì? Trong CSS, thuật ngữ Box Model được sử dụng khi nói về thiết kế và bố cục.
+Khi trình duyệt render một phần tử HTML, chúng sẽ được bao bọc xung quanh bởi một chiếc hộp vô hình, bao gồm nội dung, padding, border và margin.</description>
+    </item>
+    
+    <item>
+      <title>Một số khái niệm cơ bản về công nghệ Web</title>
+      <link>http://iamkryonics.github.com/myblog/posts/mot-so-khai-niem-co-ban-ve-cong-nghe-web/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://iamkryonics.github.com/myblog/posts/mot-so-khai-niem-co-ban-ve-cong-nghe-web/</guid>
+      <description>Trong tuần đầu tiên, ta sẽ đi tìm hiểu về một số khái niệm cơ bản nhưng rất quan trọng trong lĩnh vực công nghệ web, bao gồm DNS, Domain Name, Hosting, HTTP và các trình duyệt web.
+ 1. DNS là gì, cách thức hoạt động của nó? DNS (Domain Name System hay hệ thống phân giải tên miền) giống như một cuốn sổ lưu trữ danh bạ của Internet.</description>
+    </item>
+    
+  </channel>
+</rss>

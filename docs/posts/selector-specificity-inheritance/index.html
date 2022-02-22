@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CSS Cơ Bản: Selectors - Cascade/Specificity - Inheritance - Loc Vu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="http://iamkryonics.github.com/myblog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/myblog/css/style.min.bcad1e514a22ceb68d813f09542ea3bcf5c25c03aec78dbfa04a2536721748bc.css">
+  
+
+  
+    <meta name="description" content="Sau khi tìm hiểu về Box Model, ta bắt đầu với các khái niệm của CSS, tìm hiểu về các Selectors, để có thể chọn được thẻ mà mình mong muốn, cũng như về hệ thống phân cấp, tính kế thừa của chúng."/>
+    <meta property="og:title" content="CSS Cơ Bản: Selectors - Cascade/Specificity - Inheritance"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://iamkryonics.github.com/myblog/posts/selector-specificity-inheritance/"/>
+    
+    <meta property="og:description" content="Sau khi tìm hiểu về Box Model, ta bắt đầu với các khái niệm của CSS, tìm hiểu về các Selectors, để có thể chọn được thẻ mà mình mong muốn, cũng như về hệ thống phân cấp, tính kế thừa của chúng."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@zerostaticio"/>
+    <meta name="twitter:creator" content="@zerostaticio"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="http://iamkryonics.github.com/myblog/">Loc Vu</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/myblog/myblog/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/myblog/myblog/posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>CSS Cơ Bản: Selectors - Cascade/Specificity - Inheritance<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <blockquote>
+<p>Sau khi tìm hiểu về Box Model, ta bắt đầu với các khái niệm của CSS, tìm hiểu về các Selectors, để có thể chọn được thẻ mà mình mong muốn, cũng như về hệ thống phân cấp, tính kế thừa của chúng.</p>
+</blockquote>
+<h2 id="selectors-là-gì">Selectors là gì?</h2>
+<p>Như bạn biết trong một file HTML, có rất nhiều thẻ, cũng như các ID, class cho các thẻ để phân biệt, vậy trong CSS khi ta muốn truy xuất tới các phần tử này để styling, ta cần sự trợ giúp của các Selectors.</p>
+<p>Ta có thể chia CSS Selectors thành các loại sau:<br>
+<strong>- Selector cơ bản:</strong> Dựa trên các thẻ, ID, class, thuộc tính,..<br>
+<strong>- Selector kết hợp:</strong> Dựa trên mối liên hệ giữa các thẻ HTML.<br>
+<strong>- Selector nhóm:</strong> Dựa trên sự giống nhau về style giữa các thẻ HTML.<br>
+<strong>- Pseudo Selector:</strong> Các Selectors cho các thuộc tính đặc biệt.</p>
+<h3 id="1-selector-cơ-bản">1. Selector cơ bản</h3>
+<p><img src="/images/selector1.png" alt="Selector"></p>
+<h3 id="2-selector-kết-hợp">2. Selector kết hợp</h3>
+<p><img src="/images/selector2.png" alt="Selector"></p>
+<h3 id="3-selector-nhóm">3. Selector nhóm</h3>
+<p><img src="/images/selector3.png" alt="Selector"></p>
+<h3 id="4-pseudo-selector">4. Pseudo Selector</h3>
+<p><strong>Pseudo-classes:</strong> :link, :visited, :hover, :active, :focus,&hellip;<br>
+<strong>Pseudo-elements:</strong> ::before, ::after,&hellip;
+<img src="/images/selector4.png" alt="Selector"></p>
+<h2 id="cascadespecificity-trong-css">Cascade/Specificity trong CSS</h2>
+<h3 id="specificity">Specificity</h3>
+<p>Trong nhiều trường hợp, một thẻ HTML có thể được trỏ tới bởi các Selector khác nhau, đôi khi có thể gây xung đột trong việc styling. Vậy làm cách nào trình duyệt biết được cái nên được ưu tiên?</p>
+<p>Selectors có thứ hạng cấp bậc các thành phần sẽ được ưu tiên. Nếu nhiều thuộc tính CSS xung đột với nhau, Selector ở cấp bậc cao hơn sẽ được áp dụng.<br>
+<strong>1. ID Selectors</strong><br>
+<strong>2. Class, Pseudo Class Selectors, Atribute Selectors</strong><br>
+<strong>3. Element Selector</strong>
+<img src="/images/specific.png" alt="Specific"></p>
+<p>Vậy nếu có hai Selectors hạng tương đương nhau thì sao? <strong>Selector được thiết lập sau sẽ được áp dụng (theo thứ tự)</strong>
+<img src="/images/next.png" alt="Specific"></p>
+<p>Trong VS Code, khi ta hover vào một Selector, một bảng <strong>Selector Specificity</strong> sẽ được hiển thị, với 3 chữ số ngăn cách nhau bởi dấu phẩy. Ta có thể dùng nó để so sánh mức độ ưu tiên, tương tự như cách so sánh theo số học với hàng <strong>trăm - chục - đơn vị</strong>. Selectors nào có số lớn hơn - độ ưu tiên lớn hơn.<br>
+<img src="/images/info.png" alt="Specific"></p>
+<h3 id="cascade">Cascade</h3>
+<p>Như ta đã biết, CSS là viết tắt của <strong>Cascading Style Sheets</strong>, trong đó &ldquo;Cascading&rdquo; có nghĩa là &ldquo;Xếp tầng&rdquo;. Nhờ cơ chế &ldquo;Cascading&rdquo; trong CSS, ta có thể xác định được mức độ quan trọng của các nguồn CSS mà ta sử dụng.</p>
+<p><img src="/images/cascade.webp" alt="Cascade"><br>
+Có 3 nguồn của Style Sheets mà CSS quy định, được xếp theo thứ tự độ ưu tiên tăng dần:</p>
+<p><strong>User Agent Styles:</strong> Đây là những CSS mặc định mà các trình duyệt đặt sẵn, nếu như file HTML của bạn không được style bằng CSS, nó sẽ vẫn có một vài style mặc định<br>
+<strong>User Styles:</strong> Một vài người dùng sẽ có các Style Custom được cài đặt cho cá nhân họ, những style này chỉ áp dụng cho bản thân người dùng đó và nó được cài dưới dạng local.<br>
+<strong>Author Styles:</strong> Đây là CSS do chúng ta - những developer viết.</p>
+<h2 id="inheritance">Inheritance</h2>
+<p>Thêm một khái niệm quan trọng nữa trong CSS mà ta cần quan tâm, Inheritance, tức sự kế thừa.</p>
+<p>Kế thừa trong CSS giúp giảm đáng kể thời gian và công sức cần thiết để tạo một trang web. Hãy tưởng tượng bạn sẽ phải viết bao nhiêu CSS để đặt màu trên tất cả các phần tử con của thẻ body. Điều này sẽ tốn thời gian, dễ xảy ra lỗi và khó bảo trì.</p>
+<p>Một vài thuộc tính CSS sẽ mặc định được kế thừa tư thẻ cha mẹ của chúng.</p>
+<p><strong>Style sẽ được kế thừa</strong><br>
+Các thuộc tính CSS được kế thừa thường liên quan tới text styling. Ví dụ như font, color, size, text align,&hellip;<br>
+Trường hợp dưới đây, thẻ <strong>p</strong> được kế thừa màu chữ từ thẻ <strong>body</strong>.<br>
+<img src="/images/inherit1.png" alt="Inherit"></p>
+<p><strong>Style sẽ không được kế thừa</strong><br>
+Trong khi đó, các thuộc tính CSS không được kế thừa thường liên quan tới trang trí. Trong trường hợp bên dưới, thuộc tính <strong>border</strong> không thể kế thừa từ thẻ cha, tưởng tưởng bạn đặt <strong>border</strong> cho một thẻ và tất cả các thẻ con đều kế thừa thuộc tính này thì quả là không dễ chịu.</p>
+<p>Nói chung, việc thuộc tính có thể kế thừa được hay không là do CSS quy định. Nhưng thay vào đó, tùy vào trường hợp sử dụng mà bạn muốn kế thừa một thuộc tính nào đó khác, ta vẫn có thể ép các thuộc tính này được kế thừa, nhờ sử dụng <strong>inherit</strong>
+<img src="/images/inherit2.png" alt="Inherit"></p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com" title="github" target="_blank" rel="noopener">
+          <img src="/myblog/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com" title="linkedin" target="_blank" rel="noopener">
+          <img src="/myblog/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/myblog/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
