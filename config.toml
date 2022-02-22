@@ -1,9 +1,9 @@
-baseURL ="http://iamkryonics.github.com/myblog/"
+baseURL ="/"
 languageCode = "en-us"
 title = "Loc Vu"
 themesDir = "themes"
 theme = "hugo-winston-theme"
-publishDir = "docs"
+
 
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
